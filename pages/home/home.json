@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+		"g-swiper" : "/components/g-swiper/g-swiper",
+		"g-recommend" : "./childerCpns/g-recommend/g-recommend",
+		"g-tab-contorl" : "/components/g-tab-contorl/g-tab-contorl",
+		"g-goods" : "/components/g-goods/g-goods"
+	},
+	"navigationBarTitleText":"购物街"
+}
