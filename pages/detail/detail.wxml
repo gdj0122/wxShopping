@@ -1,0 +1,10 @@
+<scroll-view class='detail' scroll-y="{{true}}">
+    <g-swiper class="d-swiper" list="{{topImages}}" />
+    <g-base-info baseInfo="{{baseInfo}}" />
+    <g-shop-info shopInfo="{{shopInfo}}" />
+    <g-detail-info detailInfo='{{detailInfo}}' />
+    <g-param-info paramInfo="{{paramInfo}}"/>
+    <g-comment-info commentInfo='{{commentInfo}}'/>
+    <g-recommend-info recommendInfo="{{recommendInfo}}"/>
+</scroll-view>
+<g-bottom-bar bind:addcart="onAddCart"/>

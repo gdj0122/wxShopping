@@ -20,6 +20,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    itemClick(e){
+      const iid = this.data.items.iid
+      wx.navigateTo({
+        url: '/pages/detail/detail?iid='+iid
+      });
+    }
   }
 })

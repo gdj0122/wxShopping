@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "g-swiper" : "/components/g-swiper/g-swiper",
+    "g-base-info" : "./chiderCpns/g-base-info/g-base-info",
+    "g-shop-info" : "./chiderCpns/g-shop-info/g-shop-info",
+    "g-detail-info" : "./chiderCpns/g-detail-info/g-detail-info",
+    "g-param-info" : "./chiderCpns/g-param-info/g-param-info",
+    "g-comment-info" : "./chiderCpns/g-comment-info/g-comment-info",
+    "g-recommend-info" : "./chiderCpns/g-recommend-info/g-recommend-info",
+    "g-bottom-bar" : "./chiderCpns/g-bottom-bar/g-bottom-bar"
+  }
+}

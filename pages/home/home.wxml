@@ -1,14 +1,18 @@
 <!-- 1.展示轮播图 -->
 <g-swiper list="{{banners}}" />
 <!-- 2.展示推荐数据 -->
-<g-recommend list='{{recommends}}' />
+<g-recommend list='{{recommends}}' bind:imageLoad='imageLoad'/>
 <!-- 3.展示本周流行 -->
 <view class="popular">
 	<image src="/assest/images/home/popular_bg.jpg" mode="widthFix"/>
 </view>
 
-<g-tab-contorl titles="{{titles}}" bind:tabClick="tanClick"/>
+<g-tab-contorl id="tab-torl" titles="{{titles}}" bind:tabClick="tanClick" class="{{isTabFixed ? 'fixed' :''}}"/>
+
+<g-tab-contorl titles="{{titles}}" wx:if="{{isTabFixed}}" bind:tabClick="tanClick"/>
 
 <!-- 展示商品数据 -->
-<g-goods goods="{{goods[currentType].list}}"></g-goods>
+<g-goods goods="{{goods[currentType].list}}" />
+<!-- 点击回到顶部 -->
+<g-back-top wx:if="{{showBackTop}}"/>
   

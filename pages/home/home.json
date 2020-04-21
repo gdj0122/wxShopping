@@ -3,7 +3,8 @@
 		"g-swiper" : "/components/g-swiper/g-swiper",
 		"g-recommend" : "./childerCpns/g-recommend/g-recommend",
 		"g-tab-contorl" : "/components/g-tab-contorl/g-tab-contorl",
-		"g-goods" : "/components/g-goods/g-goods"
+		"g-goods" : "/components/g-goods/g-goods",
+		"g-back-top" : "/components/g-back-top/g-back-top"
 	},
 	"navigationBarTitleText":"购物街"
 }

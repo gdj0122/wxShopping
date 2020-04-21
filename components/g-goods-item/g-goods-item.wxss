@@ -16,8 +16,10 @@
 .title{
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 28rpx;
 }
-info{
+.info{
     font-size: 26rpx;
 }
 .info .price{

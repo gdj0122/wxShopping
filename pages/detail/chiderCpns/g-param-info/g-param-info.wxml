@@ -1,0 +1,24 @@
+<view class="param-info">
+  <view class="size">
+    <block wx:for="{{paramInfo.sizes}}" wx:for-index="indexX" wx:for-item="itemX" wx:key="indexX">
+      <view class="size-table">
+        <block wx:for="{{itemX}}" wx:for-index="indexY" wx:for-item="itemY" wx:key="indexY">
+          <view class="size-row row">
+            <block wx:for="{{itemY}}" wx:key="index">
+              <view class="size-item">{{item}}</view>
+            </block>
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
+  <!-- 信息 -->
+  <view class="info">
+    <block wx:for="{{paramInfo.infos}}" wx:key="index">
+      <view class="info-row row">
+        <view class="key">{{item.key}}</view>
+        <view class="value">{{item.value}}</view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,5 +1,7 @@
 import {getMultiData, getGoodsData} from '../../service/home.js'
 const type = ['pop','new','sell']
+
+const TOP_DISTANCE = 1200;
 Page({
 
   /**
@@ -14,7 +16,10 @@ Page({
       'new':{page:0,list:[]},
       'sell':{page:0,list:[]}
     },
-    currentType:"pop"
+    currentType:"pop",
+    showBackTop:false,
+    isTabFixed : false,
+    tabScrollTop:0
   },
 
   /**
@@ -26,8 +31,6 @@ Page({
     this._getGoodsData('pop');
     this._getGoodsData('new');
     this._getGoodsData('sell');
-    console.log(this.data.goods.pop.list);
-    
   },
   // -------------事件监听函数-----------------
   tanClick(event){
@@ -66,5 +69,28 @@ Page({
   },
   onReachBottom(){
     this._getGoodsData(this.data.currentType)    
+  },
+  onPageScroll(options){
+    // 取出滚动的距离
+    const scrollTop = options.scrollTop;
+    const flag = scrollTop >= TOP_DISTANCE
+    // 修改showBackTop属性
+    if (flag != this.data.showBackTop) {
+      this.setData({
+        showBackTop : flag
+      })
+    }
+    // 修改isTabFixed
+    const flag2 = scrollTop >= this.data.tabScrollTop
+    if (flag2 != this.data.isTabFixed) {
+      this.setData({
+        isTabFixed : flag2
+      })
+    }
+  },
+  imageLoad(){
+     wx.createSelectorQuery().select("#tab-torl").boundingClientRect(rect=>{
+       this.data.tabScrollTop = rect.top
+     }) .exec()
   }
 })

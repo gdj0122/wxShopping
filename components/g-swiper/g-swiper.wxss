@@ -1,4 +1,7 @@
 /* components/g-swiper.wxss */
-.swiper-item .image{
+.swiper {
+    height: 360rpx;
+}
+.image{
     width: 100%;
 } 

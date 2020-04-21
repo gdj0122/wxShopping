@@ -1,0 +1,4 @@
+<view class="back-top" bind:tap="handleBackTop">
+    <image class="image" src="/assest/images/common/top.png" />
+</view>
+  
