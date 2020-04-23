@@ -1,0 +1,12 @@
+<scroll-view class="content" scroll-y="{{true}}">
+  <!-- 子类 -->
+  <view class='subcategory'>
+    <block wx:for="{{subcategories}}" wx:key="index">
+      <view class='item'>
+        <image class="image" src="{{item.image}}" mode="widthFix"/>
+        <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+
+</scroll-view>

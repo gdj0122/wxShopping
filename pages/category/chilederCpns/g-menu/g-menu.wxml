@@ -1,0 +1,7 @@
+<scroll-view class="menu" scroll-y="{{true}}">
+  <block wx:for="{{categories}}" wx:key="index">
+    <view class='item {{index==curredIndex ? "active":""}}' bind:tap="onItemClick" data-index="{{index}}">
+      {{item.title}}
+    </view>
+  </block>
+</scroll-view>

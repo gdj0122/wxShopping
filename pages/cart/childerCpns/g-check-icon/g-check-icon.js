@@ -1,10 +1,10 @@
-// pages/detail/chiderCpns/g-bottom-bar/g-bottom-bar.js
+// pages/cart/childerCpns/g-check-icon/g-check-icon.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    isChecked:Boolean
   },
 
   /**
@@ -13,13 +13,11 @@ Component({
   data: {
 
   },
-
+  externalClasses: ["icon"],
   /**
    * 组件的方法列表
    */
   methods: {
-    onAddCart(){
-      this.triggerEvent('addcart',{},{})
-    }
+
   }
 })

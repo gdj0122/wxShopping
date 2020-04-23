@@ -1,10 +1,12 @@
-// pages/detail/chiderCpns/g-bottom-bar/g-bottom-bar.js
+// pages/cart/childerCpns/bottom-bar/bottom-bar.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    selected:Boolean,
+    price:Number,
+    counter:Number
   },
 
   /**
@@ -18,8 +20,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onAddCart(){
-      this.triggerEvent('addcart',{},{})
-    }
+
   }
 })

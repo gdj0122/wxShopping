@@ -1,10 +1,11 @@
-// pages/detail/chiderCpns/g-bottom-bar/g-bottom-bar.js
+// pages/category/chilederCpns/g-content/g-content.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    subcategories:Array,
+    categoryDetail:Array
   },
 
   /**
@@ -13,13 +14,11 @@ Component({
   data: {
 
   },
-
+  
   /**
    * 组件的方法列表
    */
   methods: {
-    onAddCart(){
-      this.triggerEvent('addcart',{},{})
-    }
+
   }
 })

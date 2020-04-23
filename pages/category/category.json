@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "g-menu" : "./chilederCpns/g-menu/g-menu",
+    "g-content" : "./chilederCpns/g-content/g-content"
+  }
 }

@@ -1,1 +1,10 @@
-/* pages/category/category.wxss */
+.category {
+  height: 100%;
+  display: flex;
+}
+.category g-menu {
+  width: 30%;
+}
+.category g-content {
+  width: 70%;
+}

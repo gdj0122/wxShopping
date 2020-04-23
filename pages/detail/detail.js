@@ -1,12 +1,14 @@
 import {getDetail,getBaseInfo,ShopInfo,ParamInfo,getRecommends} 
 from '../../service/detail'
+
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    iid:'1m7c6iu',
+    iid:null,
     topImages:[],
     baseInfo:{},
     shopInfo:{},
@@ -21,7 +23,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      // iid: options.iid
+      iid: options.iid
     })
     this._getDetail()
     this._getRecommends()
@@ -69,7 +71,7 @@ Page({
     obj.title= this.data.baseInfo.title;
     obj.desc = this.data.baseInfo.desc;
     obj.price = this.data.baseInfo.realPrice;
-    // app.addToCart(obj)
+    app.addToCart(obj);
     wx.showToast({
       title: '加入购物车成功',
     })

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "g-tab-control": "/components/g-tab-contorl/g-tab-contorl",
+    "g-goods": "/components/g-goods/g-goods"
+  }
+}
